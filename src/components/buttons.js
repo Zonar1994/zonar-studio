@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 
 //set calls for lights
-// const lightsoff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/77239';
-// const lightson = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/77241';
+const lightsoff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/77239';
+const lightson = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/77241';
 const KiLight = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78387';
 const MiLight = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78390';
-// const NiLight = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78393';
-// const Fan = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78396';
+const NiLight = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78393';
+const Fan = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78396';
 const KiLightOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78402';
-// const MiLightOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78404';
-// const NiLightOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78406';
-// const FanOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78408';
+const MiLightOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78404';
+const NiLightOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78406';
+const FanOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78408';
 
 //Request headers en stuff
 const initDetails = {
@@ -44,6 +44,36 @@ export class buttons extends Component {
                 }
                 break;
             case 'MiOn':
+                if (this.state.isClicked) {
+                    return MiLight;
+                }
+                else if (!this.state.isClicked) {
+                    return MiLightOff;
+                }
+                break;
+            case 'NiOn':
+                if (this.state.isClicked) {
+                    return NiLight;
+                }
+                else if (!this.state.isClicked) {
+                    return NiLightOff;
+                }
+                break;
+                case 'FanOn':
+                    if (this.state.isClicked) {
+                        return Fan;
+                    }
+                    else if (!this.state.isClicked) {
+                        return FanOff;
+                    }
+                    break;
+                case 'AllLights':
+                    if (this.state.isClicked) {
+                        return lightson;
+                    }
+                    else if (!this.state.isClicked) {
+                        return lightsoff;
+                    }
                 return MiLight;
             default:
                 return;
@@ -73,7 +103,11 @@ export class buttons extends Component {
     render() {
         return (
             <div>
-                <button onClick={() => this.action("KiOn")}>Kitchen Light</button>
+                <button class="glow-on-hover" onClick={() => this.action("KiOn")}>Kitchen Light</button>
+                <button class="glow-on-hover" onClick={() => this.action("MiOn")}>Main Light</button>
+                <button class="glow-on-hover" onClick={() => this.action("NiOn")}>Night Light</button>
+                <button onClick={() => this.action("FanOn")}>Fan</button>
+                <button class="glow-on-hover" onClick={() => this.action("AllLights")}>All Lights</button>
             </div>
         )
     }

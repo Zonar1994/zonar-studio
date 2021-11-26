@@ -4,7 +4,7 @@ import Buttons from './components/buttons';
 function App() {
   return (
     <div className="App">
-      <Buttons />
+      <Buttons class="glow-on-hover" />
     </div>
   );
 }
