@@ -111,9 +111,10 @@ export class buttons extends Component {
     //Return the button
     render() {
         return (
+         
+          
             <div>
-            <h3>Zonar's Studio</h3>
-            <div class="card">
+               <h3>Zonar's Studio</h3>,
                 <button class="glow-on-hover" onClick={() => this.action("KiOn")}>Kitchen Light</button>
                 <div>
                 <button class="glow-on-hover" onClick={() => this.action("MiOn")}>Main Light</button>
@@ -123,11 +124,10 @@ export class buttons extends Component {
                 <button class="glow-on-hover" onClick={() => this.action("NiOn")}>Night Light</button>
                 <button class="glow-on-hover" onClick={() => this.action("ChillLights")}>Chill Light</button>
                 <button class="glow-on-hover" onClick={() => this.action("FanOn")}>Fan</button>
+                </div>
+                </div>
+            </div>
             
-                </div>
-                </div>
-            </div>
-            </div>
            
         )
     }
