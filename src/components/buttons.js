@@ -112,10 +112,8 @@ export class buttons extends Component {
     render() {
         return (
             <div>
+            <h3>Zonar's Studio</h3>
                 <button class="glow-on-hover" onClick={() => this.action("KiOn")}>Kitchen Light</button>
-                
-               
-                
                 <div>
                 <button class="glow-on-hover" onClick={() => this.action("MiOn")}>Main Light</button>
                 <button class="glow-on-hover" onClick={() => this.action("AllLights")}>All Lights</button>
