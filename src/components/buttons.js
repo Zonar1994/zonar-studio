@@ -11,6 +11,7 @@ const KiLightOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/784
 const MiLightOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78404';
 const NiLightOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78406';
 const FanOff = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/78408';
+const ChillLight = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/77256';
 
 //Request headers en stuff
 const initDetails = {
@@ -74,6 +75,14 @@ export class buttons extends Component {
                     else if (!this.state.isClicked) {
                         return lightsoff;
                     }
+                    break;
+                case 'ChillLights':
+                    if (this.state.isClicked) {
+                        return ChillLight;
+                    }
+                    else if (!this.state.isClicked) {
+                        return lightsoff;
+                    }
                 return MiLight;
             default:
                 return;
@@ -104,11 +113,23 @@ export class buttons extends Component {
         return (
             <div>
                 <button class="glow-on-hover" onClick={() => this.action("KiOn")}>Kitchen Light</button>
+                
+               
+                
+                <div>
                 <button class="glow-on-hover" onClick={() => this.action("MiOn")}>Main Light</button>
-                <button class="glow-on-hover" onClick={() => this.action("NiOn")}>Night Light</button>
-                <button onClick={() => this.action("FanOn")}>Fan</button>
                 <button class="glow-on-hover" onClick={() => this.action("AllLights")}>All Lights</button>
+                
+                <div>
+                <button class="glow-on-hover" onClick={() => this.action("NiOn")}>Night Light</button>
+                <button class="glow-on-hover" onClick={() => this.action("ChillLights")}>Chill Light</button>
+                <button class="glow-on-hover" onClick={() => this.action("FanOn")}>Fan</button>
+            
+                </div>
+                
             </div>
+            </div>
+           
         )
     }
 }
