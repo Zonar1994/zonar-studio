@@ -113,6 +113,7 @@ export class buttons extends Component {
         return (
             <div>
             <h3>Zonar's Studio</h3>
+            <div class="card">
                 <button class="glow-on-hover" onClick={() => this.action("KiOn")}>Kitchen Light</button>
                 <div>
                 <button class="glow-on-hover" onClick={() => this.action("MiOn")}>Main Light</button>
@@ -124,7 +125,7 @@ export class buttons extends Component {
                 <button class="glow-on-hover" onClick={() => this.action("FanOn")}>Fan</button>
             
                 </div>
-                
+                </div>
             </div>
             </div>
            
