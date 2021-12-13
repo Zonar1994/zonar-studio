@@ -17,7 +17,9 @@ h1{
     font-size: 60px;
     text-align: center;
 }
-
+.image{
+    align-items: left;
+}
 h3{
     color: #777777;
     font-size: 30px;
@@ -36,11 +38,9 @@ h3{
     width: 171px;
     height: 90px;
     border: none;
-    outline: none;
     color: #fff;
     background: #3A3A3A;
     cursor: pointer;
-    z-index: 0;
     border-radius: 10px;
     padding-top: 5px;
     padding-bottom: 15px;
@@ -48,8 +48,7 @@ h3{
     margin-left: 10px;
 }
 .preset{
-    font-family: 'Arial';
-    
+    font-family: 'Arial'; 
     border: none;
     outline: none;
     color: #fff;
