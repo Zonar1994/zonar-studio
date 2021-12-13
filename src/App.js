@@ -1,13 +1,14 @@
 import './App.css';
 import Buttons from './components/buttons';
-
+import Presets from './components/presets';
 
 function App() {
   return (
     <div className="App">
-      <Buttons class="glow-on-hover" />
-
+      <Buttons class="glow-on-hover" />,
+      <Presets />
     </div>
+    
   );
 }
 
