@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from '../App.css'
+
 
 //set calls for lights
 const secret = '69F02D122B/'
