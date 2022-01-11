@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-//set calls for lights
+//set calls for presets
 const chill = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/77256';
 const vibing = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/82113';
 const angola = 'https://sequematic.com/trigger-custom-webhook/69F02D122B/82115';
@@ -93,18 +93,18 @@ export class presets extends Component {
         return (
             <div>               
         
-          <div class="menu-buttons">
+          <div className="menu-buttons">
           
-          <button class="preset" onClick={() => this.action("ChillLi")}>Chill</button>
+          <button className="preset" onClick={() => this.action("ChillLi")}>Chill</button>
        
         
-          <button class="preset" onClick={() => this.action("VibingLi")}>Vibing</button>
+          <button className="preset" onClick={() => this.action("VibingLi")}>Vibing</button>
         
         
-        <button class="preset" onClick={() => this.action("AngolaLi")}>Angola</button>
+        <button className="preset" onClick={() => this.action("AngolaLi")}>Angola</button>
         
        
-        <button class="preset" onClick={() => this.action("SunsetLi")}>Sunset</button>
+        <button className="preset" onClick={() => this.action("SunsetLi")}>Sunset</button>
         
       </div>
  

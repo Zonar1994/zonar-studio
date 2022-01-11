@@ -5,7 +5,7 @@ import Presets from './components/presets';
 function App() {
   return (
     <div className="App">
-      <Buttons class="glow-on-hover" />,
+      <Buttons className="glow-on-hover" />,
       <Presets />
     </div>
     
