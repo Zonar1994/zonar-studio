@@ -185,12 +185,42 @@ export class buttons extends Component {
                <h1>Studio 154</h1>
                <h3>Guest Access</h3>
                <div class="container">
-                <button className={ki} onClick={() => this.action("KiOn")}><h4>Kitchen Light</h4>Kitchen</button>
-                <button className={mi} onClick={() => this.action("MiOn")}><h4>Main Light</h4>Bedroom</button>          
-                <button className={ni} onClick={() => this.action("NiOn")}><h4>Night Stand</h4>Bedroom</button>
-                <button className={allL} onClick={() => this.action("AllLights")}><h4>All lights</h4>Studio</button>
-                <button className={fan} onClick={() => this.action("FanOn")}><h4>Fan</h4>Bedroom</button> 
-                <button className={allD} onClick={() => this.action("AllDevices")}><h4>All Devices</h4>Studio</button>
+                <button className={ki} onClick={() => this.action("KiOn")}>
+<svg xmlns="http://www.w3.org/2000/svg" width="27.9" height="40.583" viewBox="0 0 27.9 40.583">
+  <path id="Icon_awesome-lightbulb" data-name="Icon awesome-lightbulb" d="M7.614,36.013a2.537,2.537,0,0,0,.425,1.4l1.355,2.036A2.536,2.536,0,0,0,11.5,40.583H16.4a2.536,2.536,0,0,0,2.112-1.132l1.355-2.036a2.536,2.536,0,0,0,.425-1.4l0-3.04H7.61l0,3.04ZM0,13.95a13.872,13.872,0,0,0,3.453,9.177,22.778,22.778,0,0,1,4.138,7.249c0,.021.006.041.009.062H20.3c0-.021.006-.04.009-.062a22.778,22.778,0,0,1,4.138-7.249A13.947,13.947,0,1,0,0,13.95ZM13.95,7.609A6.348,6.348,0,0,0,7.609,13.95a1.268,1.268,0,0,1-2.536,0A8.887,8.887,0,0,1,13.95,5.073a1.268,1.268,0,0,1,0,2.536Z" transform="translate(0 0)" fill="#ffffff"/>
+</svg>
+ <p><span>Kitchen Light</span>Kitchen</p> 
+</button>
+
+<button className={mi} onClick={() => this.action("MiOn")}>
+<svg xmlns="http://www.w3.org/2000/svg" width="27.9" height="40.583" viewBox="0 0 27.9 40.583">
+  <path id="Icon_awesome-lightbulb" data-name="Icon awesome-lightbulb" d="M7.614,36.013a2.537,2.537,0,0,0,.425,1.4l1.355,2.036A2.536,2.536,0,0,0,11.5,40.583H16.4a2.536,2.536,0,0,0,2.112-1.132l1.355-2.036a2.536,2.536,0,0,0,.425-1.4l0-3.04H7.61l0,3.04ZM0,13.95a13.872,13.872,0,0,0,3.453,9.177,22.778,22.778,0,0,1,4.138,7.249c0,.021.006.041.009.062H20.3c0-.021.006-.04.009-.062a22.778,22.778,0,0,1,4.138-7.249A13.947,13.947,0,1,0,0,13.95ZM13.95,7.609A6.348,6.348,0,0,0,7.609,13.95a1.268,1.268,0,0,1-2.536,0A8.887,8.887,0,0,1,13.95,5.073a1.268,1.268,0,0,1,0,2.536Z" transform="translate(0 0)" fill="#ffffff"/>
+</svg>
+ <p><span>Main Light</span>Bedroom</p> 
+</button>
+
+<button className={ni} onClick={() => this.action("NiOn")}>
+<svg xmlns="http://www.w3.org/2000/svg" width="27.9" height="40.583" viewBox="0 0 27.9 40.583">
+  <path id="Icon_awesome-lightbulb" data-name="Icon awesome-lightbulb" d="M7.614,36.013a2.537,2.537,0,0,0,.425,1.4l1.355,2.036A2.536,2.536,0,0,0,11.5,40.583H16.4a2.536,2.536,0,0,0,2.112-1.132l1.355-2.036a2.536,2.536,0,0,0,.425-1.4l0-3.04H7.61l0,3.04ZM0,13.95a13.872,13.872,0,0,0,3.453,9.177,22.778,22.778,0,0,1,4.138,7.249c0,.021.006.041.009.062H20.3c0-.021.006-.04.009-.062a22.778,22.778,0,0,1,4.138-7.249A13.947,13.947,0,1,0,0,13.95ZM13.95,7.609A6.348,6.348,0,0,0,7.609,13.95a1.268,1.268,0,0,1-2.536,0A8.887,8.887,0,0,1,13.95,5.073a1.268,1.268,0,0,1,0,2.536Z" transform="translate(0 0)" fill="#ffffff"/>
+</svg>
+ <p><span>Nightstand</span>Bedroom</p> 
+</button>
+
+<button className={allL} onClick={() => this.action("AllLights")}>
+<svg xmlns="http://www.w3.org/2000/svg" width="27.9" height="40.583" viewBox="0 0 27.9 40.583">
+  <path id="Icon_awesome-lightbulb" data-name="Icon awesome-lightbulb" d="M7.614,36.013a2.537,2.537,0,0,0,.425,1.4l1.355,2.036A2.536,2.536,0,0,0,11.5,40.583H16.4a2.536,2.536,0,0,0,2.112-1.132l1.355-2.036a2.536,2.536,0,0,0,.425-1.4l0-3.04H7.61l0,3.04ZM0,13.95a13.872,13.872,0,0,0,3.453,9.177,22.778,22.778,0,0,1,4.138,7.249c0,.021.006.041.009.062H20.3c0-.021.006-.04.009-.062a22.778,22.778,0,0,1,4.138-7.249A13.947,13.947,0,1,0,0,13.95ZM13.95,7.609A6.348,6.348,0,0,0,7.609,13.95a1.268,1.268,0,0,1-2.536,0A8.887,8.887,0,0,1,13.95,5.073a1.268,1.268,0,0,1,0,2.536Z" transform="translate(0 0)" fill="#ffffff"/>
+</svg>
+ <p><span>All Lights</span>Studio</p> 
+</button>
+<button className={fan} onClick={() => this.action("FanOn")}><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 62.769 62.769">
+  <path id="Icon_awesome-fan" data-name="Icon awesome-fan" d="M30.564,11.1a19.571,19.571,0,0,0-6.68,1.115L24.959,1.539A1.418,1.418,0,0,0,23.348.011,13.961,13.961,0,0,0,11.1,13.821a19.571,19.571,0,0,0,1.115,6.68L1.539,19.425A1.418,1.418,0,0,0,.011,21.037,13.961,13.961,0,0,0,13.821,33.288a19.571,19.571,0,0,0,6.68-1.115L19.425,42.845a1.42,1.42,0,0,0,1.612,1.527A13.961,13.961,0,0,0,33.288,30.564a19.571,19.571,0,0,0-1.115-6.68l10.672,1.076a1.419,1.419,0,0,0,1.527-1.612A13.961,13.961,0,0,0,30.564,11.1Zm-8.371,13.87a2.774,2.774,0,1,1,2.774-2.774A2.774,2.774,0,0,1,22.192,24.966Z" transform="translate(31.385 62.769) rotate(-135)" fill="#ffffff"/>
+</svg><p><span>Fan</span>Bedroom</p> 
+</button>
+<button className={allD} onClick={() => this.action("AllDevices")}><svg xmlns="http://www.w3.org/2000/svg" width="37.948" height="37.948" viewBox="0 0 37.948 37.948">
+  <path id="Icon_metro-power-cord" data-name="Icon metro-power-cord" d="M42.484,13.11,38.9,9.528,31.827,16.6,27.81,12.585,34.885,5.51,31.3,1.928,24.228,9,19.686,4.461,16.257,7.89,36.523,28.155l3.429-3.429-4.542-4.542ZM33.382,28.6,15.816,11.03c-3.793,4.548-8.1,11.575-5.122,17.622L5.46,33.887a3.176,3.176,0,0,0,0,4.478l.588.588a3.176,3.176,0,0,0,4.478,0l5.234-5.234c6.046,2.974,13.074-1.329,17.622-5.121Z" transform="translate(-4.536 -1.928)" fill="#ffffff"/>
+</svg><p><span>All Devices</span>Studio</p> 
+</button>
+               
                 </div>     
                 
  

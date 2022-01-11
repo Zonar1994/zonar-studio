@@ -5,7 +5,7 @@ body {
     margin: 0;
     width: 100%;
     height: 100vh;
-    flex-direction: row;
+    flex-direction: row;    
     justify-content: center;
     align-items: top;
     background: #202125;
@@ -29,10 +29,16 @@ h3{
 }
 .container{
     align-items: center;
-   padding-left: 7px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
    
 }
 .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     font-family: 'Arial';
     width: 171px;
@@ -49,6 +55,43 @@ h3{
 
 background-repeat: no-repeat;
 
+}
+
+.button svg {
+    height: 40px;
+    width: auto;
+    fill: #fff;
+}
+.button p {
+    text-align: left;
+    font-size: 15px;
+}
+
+.button p span{
+    display: block;
+    
+}
+
+.activelight p span {
+    color: #F1BE41
+}
+
+.activelight svg {
+    filter: invert(68%) sepia(93%) saturate(371%) hue-rotate(349deg) brightness(104%) contrast(89%);
+}
+.activefan p span {
+    color: #8CAFEC;
+}
+
+.activefan svg {
+    filter: invert(67%) sepia(38%) saturate(412%) hue-rotate(181deg) brightness(94%) contrast(96%);
+}
+.activedevice p span {
+    color: #90B791;
+}
+
+.activedevice svg {
+    filter: invert(69%) sepia(27%) saturate(317%) hue-rotate(72deg) brightness(95%) contrast(89%);
 }
 .preset{
     font-family: 'Arial'; 
