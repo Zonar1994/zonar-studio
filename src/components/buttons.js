@@ -55,15 +55,11 @@ export class buttons extends Component {
                 if (this.state.isClicked) { 
                          ki += ' button activelight';
                     
-                    
-                    
-                    console.log(this)
                     return URL + KiLight;
                 }
                 else if (!this.state.isClicked) {
                    ki -= ' activelight';
                    ki += ' button';
-                    console.log(this)
                     return URL + KiLightOff;    
                 }
                 break;
