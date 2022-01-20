@@ -31,35 +31,43 @@ export class presets extends Component {
     //Determine which action should be taken from the button pressed and return it
     determindedaction = (command) => {
         switch (command) {
+            // check if the button has been clicked
             case 'ChillLi':
                 if (this.state.isClicked) {
                     return chill;
                 }
                 else if (!this.state.isClicked) {
+                        // return the correct button and animation 
                     return allights;
                 }
                 break;
             case 'VibingLi':
+                // check if the button has been clicked
                 if (this.state.isClicked) {
                     return vibing;
                 }
                 else if (!this.state.isClicked) {
+                       // return the correct button and animation 
                     return allights;
                 }
                 break;
             case 'AngolaLi':
+                 // check if the button has been clicked
                 if (this.state.isClicked) {
                     return angola;
                 }
                 else if (!this.state.isClicked) {
+                          // return the correct button and animation 
                     return allights;
                 }
                 break;
+                      // return the correct button and animation 
                 case 'SunsetLi':
                     if (this.state.isClicked) {
                         return sunset;
                     }
                     else if (!this.state.isClicked) {
+                        // return the correct button and animation 
                         return allights;
                     }
                   
@@ -92,7 +100,7 @@ export class presets extends Component {
     render() {
         return (
             <div>               
-        
+        {/* These are the buttons for the presets */}
           <div className="menu-buttons">
           
           <button className="preset" onClick={() => this.action("ChillLi")}>Chill</button>
