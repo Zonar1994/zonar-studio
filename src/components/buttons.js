@@ -186,7 +186,8 @@ export class buttons extends Component {
         return (
 
           
-            
+            <div>
+
                <div class="container"> 
                {/* these are the buttons with their svg icons */}
                 <button className={ki} onClick={() => this.action("KiOn")}> 
@@ -229,7 +230,7 @@ export class buttons extends Component {
                 </div>     
                 
  
-            
+            </div>
             
            
         )
