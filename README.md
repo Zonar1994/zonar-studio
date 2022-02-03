@@ -1,5 +1,5 @@
 
-# Augmented Reality Experiments
+# Studio 154
 
 This is a project I created in my second year of Media Design. It is an
 Home Automation appliction with Tuya Smart Devices and Sequematic Webhook service..
